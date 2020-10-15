@@ -15,12 +15,12 @@ print("=======")
 // INPUT
 
 // Get tine length
-print("Enter tine length:")
+print("t = 3")
 print("   ", terminator: "")
 let tineLength = Int(readLine()!)!
 
 // Get tine spacing
-print("Enter tine spacing:")
+print("s = 2")
 print("   ", terminator: "")
 let spacing = Int(readLine()!)!
 

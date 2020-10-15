@@ -15,16 +15,26 @@ print("=============")
 
 // INPUT
 
+// Function to prompt the user
+func getInteger(prompt: String) -> Int {
+    
+    // Show the question/prompt
+    print(prompt)
+    
+    // Return the value given
+    return Int(readLine()!)!
+    
+}
+
 // Get daytime minutes
-print("Number of daytime minutes?")
-let day = Int(readLine()!)!
+let day = getInteger(prompt: "Number of daytime minutes?")
 
 // Get evening minutes
-print("Number of evening minutes?")
-let evening = Int(readLine()!)!
+let evening = getInteger(prompt: "Number of evening minutes?")
+
+
 
 // PROCESS
-
 // Calculate cost for plan A
 var a = 0
 
