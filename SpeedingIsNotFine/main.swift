@@ -19,8 +19,14 @@ print("====================")
 print("What is the speed limit, in km/h? ", terminator: "")
 let limit = Int(readLine()!)!
 
-let speed = 45
+// ASK FOR THE SPEED OF THE CAR
+print("What is the speed of the car? ", terminator: "")
+let speed = Int(readLine()!)!
 
+// Define ranges
+let modestSpeeding = 1...20
+let reallyBadSpeeding = 31...
+let overAverageSpeeding = 21...30
 // PROCESS AND OUTPUT
 
 // See whether the driver is within the speed limit, and if they are not, see how much they are above the limit.

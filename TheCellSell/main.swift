@@ -16,21 +16,15 @@ print("=============")
 // INPUT
 
 // Function to prompt the user
-func getInteger(prompt: String) -> Int {
-    
-    // Show the question/prompt
-    print(prompt)
-    
-    // Return the value given
-    return Int(readLine()!)!
-    
-}
+
+
 
 // Get daytime minutes
-let day = getInteger(prompt: "Number of daytime minutes?")
+var day = Int.collectInput(withPrompt: "number of daytime minutes", minimum: 0, maximum: nil)
+
 
 // Get evening minutes
-let evening = getInteger(prompt: "Number of evening minutes?")
+var night = Int.collectInput(withPrompt: "Number of nightime minutes", minimum: 0, maximum: nil)
 
 
 
@@ -42,7 +36,7 @@ var a = 0
 a += (day - 100) * 25
 
 // Add evening cost
-a += evening * 15
+a += night * 15
 
 // Calculate cost for plan B
 var b = 0
@@ -51,7 +45,7 @@ var b = 0
 b += (day - 250) * 45
 
 // Add evening cost
-b += evening * 35
+b += night * 35
 
 
 // OUTPUT
