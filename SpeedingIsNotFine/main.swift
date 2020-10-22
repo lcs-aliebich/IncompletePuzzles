@@ -29,9 +29,13 @@ let reallyBadSpeeding = 31...
 let overAverageSpeeding = 21...30
 // PROCESS AND OUTPUT
 
+// Find the difference between speed and limit
+let difference = speed - limit
+
 // See whether the driver is within the speed limit, and if they are not, see how much they are above the limit.
-if speed < limit {
-    print("Congratulations, you are within the speed limit!")
-} else {
-    print("You are speeding.")
+switch difference {
+case modestSpeeding :
+    <#code#>
+default:
+    <#code#>
 }
