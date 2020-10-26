@@ -35,7 +35,12 @@ let difference = speed - limit
 // See whether the driver is within the speed limit, and if they are not, see how much they are above the limit.
 switch difference {
 case modestSpeeding :
-    <#code#>
+    print("you are speeding")
+case reallyBadSpeeding :
+    print("you are speeding much too fast")
+case overAverageSpeeding :
+    print("you are speeding slow down")
 default:
-    <#code#>
+    print("you are not speeding")
+        
 }
