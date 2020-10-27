@@ -50,13 +50,13 @@ class TheCellSellTests: XCTestCase {
     func testTypicalCaseC() {
         
         XCTAssertEqual("""
-            Plan A costs 7120
-            Plan B costs 7120
-            Plans A and B are the same price.
+            Plan A costs 4950
+            Plan B costs 5500
+            Plan A is cheapest.
             """,
-                       compareCosts(day: 296,
-                                    evening: 140,
-                                    weekend: 6))
+                       compareCosts(day: 200,
+                                    evening: 150,
+                                    weekend: 10))
         
     }
 }
