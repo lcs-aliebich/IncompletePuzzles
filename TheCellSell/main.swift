@@ -17,11 +17,6 @@ import Foundation
 print("The Cell Sell")
 print("=============")
 
-// EXTENSIONS
-
-// NOTE: In a correct solution, this extension should be linked from another file, per these instructions:
-//
-//       https://www.russellgordon.ca/cs/incomplete-puzzles/applying-extensions/
 extension Int {
     
     static func getInput(withPrompt prompt: String, minimum: Int?, maximum: Int?) -> Int {

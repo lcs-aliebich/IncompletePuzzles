@@ -30,7 +30,7 @@ print("Welcome to Chip's Fast Food Emporium")
 //       Then select Build Phases from the tabs in the middle of the screen.
 //       Expand the Compile Sources subsection.
 //       Then drag and drop Extensions.swift to the Compile Sources subsection.
-//
+// count customers callories by adding the calories of their itemes
 let burger = Int.collectInput(withPrompt: "Please enter a burger choice:", minimum: 1, maximum: 4)
 let drink = 3
 let side = 4
