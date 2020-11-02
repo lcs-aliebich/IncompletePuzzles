@@ -32,9 +32,9 @@ print("Welcome to Chip's Fast Food Emporium")
 //       Then drag and drop Extensions.swift to the Compile Sources subsection.
 // count customers callories by adding the calories of their itemes
 let burger = Int.collectInput(withPrompt: "Please enter a burger choice:", minimum: 1, maximum: 4)
-let drink = 3
-let side = 4
-let dessert = 1
+let drink = Int.collectInput(withPrompt: "Please enter a drink choice", minimum: 1, maximum: 4)
+let side = Int.collectInput(withPrompt: "Please enter a side order choice", minimum: 1, maximum: 4)
+let dessert = Int.collectInput(withPrompt: "Please enter a desert choice", minimum: 1, maximum: 4)
 
 // PROCESS
 // NOTE: Give some thought to what kind of data structure would be helpful for this program.
@@ -42,3 +42,17 @@ let dessert = 1
 
 // OUTPUT
 // Show the calories total for the choices made by the user.
+var total = 0
+
+switch burger {
+case 1:
+    total = total + 461
+case 2:
+    total += 431
+case 3:
+    total += 420
+case 4:
+    total += 0
+default:
+    break
+}
