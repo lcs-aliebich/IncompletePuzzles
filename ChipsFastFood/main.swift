@@ -56,3 +56,46 @@ case 4:
 default:
     break
 }
+
+switch drink {
+case 1:
+    total += 130
+case 2:
+    total += 160
+case 3:
+    total += 118
+case 4:
+    total += 0
+default:
+    break
+}
+
+switch side {
+case 1:
+    total += 100
+case 2:
+    total += 57
+case 3:
+    total += 70
+case 4:
+    total += 0
+default:
+    break
+}
+
+switch dessert {
+case 1:
+    total += 167
+case 2:
+    total += 266
+case 3:
+    total += 75
+case 4:
+    total += 0
+default:
+    break
+}
+
+// Use "string interpolation" to print the total calories
+// This is just a fancy of saying "print some static text (red)" and also print the contents of a variable
+print("Your total Calorie count is \(total).")
