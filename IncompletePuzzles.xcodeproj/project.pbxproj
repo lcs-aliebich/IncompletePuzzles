@@ -61,6 +61,7 @@
 		0EE0D96C252564CB0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D96B252564CB0090B2E0 /* main.swift */; };
 		1F1CCF0A253F5F4300D00FE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CCF09253F5F4300D00FE6 /* Extensions.swift */; };
 		1F21A0B0254AFBC50021176A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CCF09253F5F4300D00FE6 /* Extensions.swift */; };
+		1F47BEC22559B16F009F074B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CCF09253F5F4300D00FE6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1279,6 +1280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EAE19782548EE9500667C5F /* main.swift in Sources */,
+				1F47BEC22559B16F009F074B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1650,6 +1652,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Extensions.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1660,6 +1663,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Extensions.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

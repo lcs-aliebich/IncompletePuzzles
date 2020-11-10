@@ -29,7 +29,7 @@ struct GameScore {
     
     // Computed property to determine points earned
     var totalPoints: Int {
-        return threePointShots * 3
+        return threePointShots * 3 + fieldGoals * 2 + freeThrows
     }
     
 }
@@ -39,11 +39,26 @@ var apples = GameScore()
 var bananas = GameScore()
 
 // INPUT
-apples.threePointShots = Int(readLine()!)!
-apples.fieldGoals = Int(readLine()!)!
+apples.threePointShots = Int.collectInput(withPrompt: "How many apples three pointers were sunk", minimum: 0, maximum: nil)
+apples.fieldGoals = Int.collectInput(withPrompt: "how many apples field goals were sunk", minimum: 0, maximum: nil)
+apples.freeThrows = Int.collectInput(withPrompt: "How many apples free throws were sunk", minimum: 0, maximum: nil)
+
+bananas.threePointShots = Int.collectInput(withPrompt: "How many bananas three pointers were sunk", minimum:0, maximum: nil)
+bananas.fieldGoals = Int.collectInput(withPrompt: "How many Bananas field goals were sunk", minimum: 0, maximum: nil)
+bananas.freeThrows = Int.collectInput(withPrompt: "How many Bananas free throws were sunk", minimum: 0, maximum: nil)
+
+
 
 // PROCESS
 let pointSpreadAToB = apples.totalPoints - bananas.totalPoints
 
-// OUTPUT
 
+// OUTPUT
+switch pointSpreadAToB {
+case 0:
+    print("t")
+case 1...:
+    print("a")
+default:
+    print("b")
+}
